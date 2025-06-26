@@ -23,7 +23,7 @@ This is the **frontend** portion of the project.
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) + [ShadCN UI](https://ui.shadcn.com/)
 - **WebSockets:** [Socket.IO](https://socket.io/)
-- **Database:** [MongoDB](https://www.mongodb.com/) (Handled in backend)
+- **Database:** [MongoDB](https://www.mongodb.com/)
 
 ✅ TODO
  - Typing indicator
