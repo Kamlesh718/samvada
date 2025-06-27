@@ -10,7 +10,7 @@ type State = {
 };
 
 export async function registerUser(
-  prevState: any,
+  _prevState: State,
   formData: FormData
 ): Promise<State> {
   await connectToDB();

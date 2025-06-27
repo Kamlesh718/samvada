@@ -13,7 +13,7 @@ type State = {
 };
 
 export async function loginUser(
-  prevState: any,
+  _prevState: State,
   formData: FormData
 ): Promise<State> {
   await connectToDB();

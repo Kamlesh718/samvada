@@ -4,7 +4,7 @@ let socket: Socket | null;
 
 export const getSocket = (): Socket => {
   if (!socket) {
-    socket = io("https://samvada-server-socket.onrender.com", {
+    socket = io("http://192.168.0.108:3001", {
       transports: ["websocket"],
     });
   }

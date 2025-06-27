@@ -13,7 +13,7 @@ export default function MessageBubble({ type, text, time }: Props) {
           isSent ? "bg-white text-black" : "bg-green-100 text-black"
         }`}
       >
-        <p>{text}</p>
+        <p className="max-w-xs break-words">{text}</p>
         <p className="text-xs text-gray-500 text-right mt-1">{time}</p>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 type Message = {
   _id: string;
   text: string;
-  createdAt: string;
+  createdAt?: Date;
   type: "sent" | "received";
   senderId: string;
   receiverId: string;
@@ -28,6 +28,8 @@ export function useChat(userId: string) {
   const [userStatuses, setUserStatuses] = useState<
     Record<string, "online" | "offline">
   >({});
+  const generateTempId = () =>
+    `temp-${Math.random().toString(36).substring(2, 15)}`;
 
   const socketRef = useRef(getSocket());
   const [isReady, setIsReady] = useState(false);
@@ -147,13 +149,13 @@ export function useChat(userId: string) {
       text,
       senderId: currentUserId,
       receiverId: userId,
-      createdAt: new Date().toISOString(),
+      createdAt: new Date(),
     };
 
     // Show your message immediately as 'sent'
     setMessages((prev) => [
       ...prev,
-      { ...msg, type: "sent", _id: Date.now().toString() },
+      { ...msg, type: "sent", _id: generateTempId() },
     ]);
 
     // Send to socket server

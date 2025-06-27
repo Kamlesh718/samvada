@@ -26,6 +26,7 @@ export async function GET(
       avatarUrl: user.avatarUrl || "/avatar.png",
     });
   } catch (err) {
+    console.error(err);
     return NextResponse.json({ error: "Invalid user ID" }, { status: 400 });
   }
 }

@@ -6,7 +6,14 @@ if (!MONGODB_URI) {
   throw new Error("⚠️ MONGODB_URI is not defined in environment variables");
 }
 
-const cached = (global as any).mongoose || { conn: null, promise: null };
+const cached = (
+  global as {
+    mongoose?: {
+      conn: typeof mongoose | null;
+      promise: Promise<typeof mongoose> | null;
+    };
+  }
+).mongoose || { conn: null, promise: null };
 
 export async function connectToDB() {
   if (cached.conn) return cached.conn;

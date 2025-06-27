@@ -10,8 +10,14 @@ type State = {
   success?: boolean;
 };
 
+type UserUpdateFields = {
+  firstName?: string;
+  lastName?: string;
+  avatarUrl?: string;
+};
+
 export async function updateProfile(
-  prevState: any,
+  _prevState: State,
   formData: FormData
 ): Promise<State> {
   try {
@@ -29,7 +35,7 @@ export async function updateProfile(
     const userId = decoded?.userId;
     if (!userId) return { error: "Invalid token" };
 
-    const update: Record<string, any> = {};
+    const update: UserUpdateFields = {};
     if (firstName) update.firstName = firstName;
     if (lastName) update.lastName = lastName;
     if (avatar) update.avatarUrl = avatarUrl;
