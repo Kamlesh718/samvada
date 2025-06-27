@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="flex items-center justify-center h-dvh text-center bg-primary dark:bg-[#12132e]">
-      <div className="text-white flex flex-col items-center justify-center p-8">
+      <div className="text-white a flex flex-col items-center justify-center p-8">
         <Image src="/samvada_logo.png" alt="Logo" width={120} height={120} />
         <h1 className="text-4xl font-bold mt-6">Welcome to संवाद</h1>
         <p className="mt-4 text-lg opacity-80 text-center max-w-md">
