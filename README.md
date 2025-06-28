@@ -9,7 +9,7 @@ This is the **frontend** portion of the project.
 ---
 
 ## 📽️
-https://github.com/user-attachments/assets/ad18c542-bbbb-499e-9556-6c0236abff57
+https://github.com/user-attachments/assets/a771de06-ffa5-4339-be02-faf9db6ed77b
 
 ## 📷 ScreenShots
 **Root Page**
