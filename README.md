@@ -8,7 +8,10 @@ This is the **frontend** portion of the project.
 
 ---
 
-## 🚀 ScreenShots
+## 📽️
+https://github.com/user-attachments/assets/ad18c542-bbbb-499e-9556-6c0236abff57
+
+## 📷 ScreenShots
 **Root Page**
 ![{CFB34219-854C-4D25-8327-DE3795A6A2F7}](https://github.com/user-attachments/assets/f9d1c882-9655-4332-9e85-c5d950aadc29)
 
