@@ -3,6 +3,9 @@
 **Samvāda (संवाद)** is a real-time chat application built with **Next.js App Router**, **TypeScript**, **Tailwind CSS**, **MongoDB** and **Socket.IO**.  
 This is the **frontend** portion of the project.
 
+**Backend SocketIO**
+- https://github.com/Kamlesh718/samvada-server-socket
+
 ---
 
 ## 🚀 ScreenShots
